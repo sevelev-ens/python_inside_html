@@ -1,0 +1,7 @@
+<html><body>
+<% import pandas as pd ; df = pd.read_csv("data/data1.csv"); %>
+<% for i in range(10): %>
+<p><%= i %>*<%= i %> : <b style="color:red"> <%= i*i %> </b></p><% end %>
+<p><em><%= df["val1"][1]  %></em></p>
+</body>
+</html>
